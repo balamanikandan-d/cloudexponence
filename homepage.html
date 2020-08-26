@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 200px;
+  float :left;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: grey;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+a{
+text-decoration: none; 
+color:honeydew;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="aws.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text"><a href = 'https://console.aws.amazon.com/console/home' target="_blank">AWS CONSOLE</a></div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="azure.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text"><a href = 'https://portal.azure.com/' target="_blank">AZURE CONSOLE</a></div>
+  </div>
+</div>
+ 
+</body>
+</html>
